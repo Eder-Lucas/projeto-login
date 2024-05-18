@@ -1,5 +1,49 @@
 @charset "UTF-8";
 
+/* mobile lanscape */
+@media screen and (max-width:768px) and (orientation: landscape) {
+    section#login {
+        width: 80vw;
+        height: 285px;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        margin: auto;
+        width: 70%; 
+    }
+
+    div#formulario > h1 {
+        margin-bottom: 0px;
+    }
+
+    div#formulario > p {
+        padding: 0px 18px;
+        margin: 5px 0px 3px 0px;
+
+    }
+
+    div#formulario > form {
+        margin: 0px;
+    }
+
+    form > input[type=submit] {
+        width: 60%;
+        margin: 15px auto 12px auto;
+        padding: 10px;
+    }
+
+    form a {
+        font-size: 0.9em;
+    }
+}
+
 /* tablet */
 @media screen and (min-width:768px) and (max-width:1024px) {
     body {
