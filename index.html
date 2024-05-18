@@ -4,21 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
     <title>Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/><!-- icones -->
+    
 </head>
 
 <body>
     <main>
         <section id="login">
-            <div id="imagem">
-                foto
-            </div>
+            <div id="imagem"><!-- imagem --></div>
 
             <div id="formulario">
-                <h1>login</h1>
+                <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.js" method="post"></form>
+
+                <form action="login.js" method="post" autocomplete="on">
+
+                    <div class="campo">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" required maxlength="30">
+                        <label for="ilogin">Login</label> 
+                    </div>
+
+                    <div class="campo">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+
+                    <input type="submit" value="Entrar">
+                    <a href="#" class="botao">
+                        Esqueci a senha
+                    </a>
+
+                </form>
             </div>
         </section>
     </main>
