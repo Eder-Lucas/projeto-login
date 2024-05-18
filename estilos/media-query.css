@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/* tablet */
+@media screen and (min-width:768px) and (max-width:1024px) {
+    body {
+        background-color: #062f81;
+        background: linear-gradient(40deg, rgba(5,175,242,1) 0%, rgba(5,108,242,1) 0%, rgba(45,98,202,1) 40%, rgba(85,22,162,1) 100%);
+        background-attachment: fixed;
+    }
+
+    section#login {
+        width: 90vw;
+        height: 330px;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 70%;
+    }
+
+    div#formulario > h1 {
+        font-size: 1.7em;
+    }
+
+    div#formulario > p {
+        padding: 0px 20px;
+        text-align: center;
+        font-size: 0.9em;
+        
+    }
+
+    div.campo > i {
+        width: 50px;
+    }
+
+    div.campo > input:hover {
+        border-bottom: 1px solid black;
+    }
+
+    form > input[type=submit] {
+        width: 70%;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    form > input[type=submit]:hover {
+        background-color: #7a14f7;
+    }
+
+    form a {
+        padding: 10px;
+        font-size: 1.05em;
+
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+    }
+
+    form a:hover {
+        color: var(--cor-roxo1);
+    }
+
+    form a:active {
+        color: var(--cor-azulClaro1);
+    }
+}

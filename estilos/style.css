@@ -17,8 +17,7 @@
     box-sizing: border-box;
 }
 
-body,
-html {
+body,html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     width: 100vw;
     height: 100vh;
@@ -75,9 +74,11 @@ div#formulario > h1 {
 }
 
 div#formulario > p {
-    font-size: 0.8em;
-    text-align: text;
     margin: 10px 0px;
+    padding: 0px 15px;
+    font-size: 0.8em;
+    text-align: justify;
+
 }
 
 div.campo > label {
@@ -107,9 +108,12 @@ div.campo > input:focus-within {
 }
 
 form > input[type=submit] {
+    display: block;
+    margin: auto;
     width: 80%;
     padding: 15px;
-    margin: 20px 0px 15px 0px;
+    margin-top: 20px;
+    margin-bottom: 18px;
     background-color: var(--cor-roxo1);
     color: white;
     border: none;
