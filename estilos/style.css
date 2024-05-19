@@ -33,6 +33,28 @@ main {
     height: 100vh;
 }
 
+footer#creditos {
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+    background-color: #00000013;
+    border-radius: 0px 0px 10px 10px;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    font-variant: small-caps;
+}
+
+footer#creditos a {
+    padding: 10px;
+    text-decoration: none;
+    color: #00ff00;
+}
+
+footer#creditos a:hover {
+    text-decoration: underline;
+}
+
 section#login {
     position: absolute;
     left: 50%;
